@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+h1{
+  font-size: 50px;
+  justify-content: center;
+}
 /*-------------------------------
         Header Design
  ----------------------------------*/
@@ -42,11 +45,13 @@
  /*-------------------------------
         Banner Design
  ----------------------------------*/
- h1{
-  font-size: 50px;
-}
 .orange-color{
-  color:orangered ;
+  background-color:orangered ;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 10px;
 }
 .banner{
   width: 90%;
@@ -55,20 +60,81 @@
   background-size: 100% 100%;
   margin: 50px auto;
   border-radius: 5px;
+  text-align: center;
+  justify-content: center;
 }
 .banner h1{
   text-align: center;
   color: #fff;
+  padding-top: 200px;
+}
+.banner h2{
+  color: #dcdcdc;
 }
 
+/*-------------------------------
+        Collection Design
+ ----------------------------------*/
+ .collection{
+  margin: 60px 0;
+}
+ .collector{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  margin: 10px 5%;
+}
+.title{
+  font-size: 35px;
+  text-align: center;
+}
+.heading{
+  margin: 10px auto;
+}
+.collection-box{
+display: grid;
+padding: 20px;
+margin: 10px;
+background-color: honeydew;
+border-radius: 15px;
+box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
+}
+
+.collection-box img{
+  width: 325px;
+  height: 250px;
+  border-radius: 10px;
+  /* margin: 10px auto; */
+}
+.collection-box h2{
+  text-align: center;
+}
+/* .details{
+  align-items: center;
+  justify-content: center;
+} */
+
+.button-2{
+  font-size: 1.3em;
+  text-align: right;
+  color:	orangered;
+  margin: 0 30px;
+}
 /*-------------------------------
         Gallary Design
  ----------------------------------*/
  .gallary{
-  width: 80% auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  margin: 50px auto;
+ }
+.gallary h1{
+  text-align: center;
+}
+ .gallary-pic{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
 }
 
 .gallary img{
@@ -76,4 +142,3 @@
   height: 200px;
   border-radius: 10px;
   margin: 15px;
-}
