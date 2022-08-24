@@ -12,11 +12,12 @@
   background-color: #0B0D17;
  }
  .header h1{
-  padding: 16px;
+  padding: 10px;
   color: azure;
  }
  .header-btn{
   justify-content: space-evenly;
+  padding: 10px;
  }
  .button {
   background-color: white;
@@ -36,4 +37,43 @@
 .button:hover {
   background-color: #555555;
   color: white;
+}
+
+ /*-------------------------------
+        Banner Design
+ ----------------------------------*/
+ h1{
+  font-size: 50px;
+}
+.orange-color{
+  color:orangered ;
+}
+.banner{
+  width: 90%;
+  height: 600px;
+  background-image: url('image/donation7.jpg');
+  background-size: 100% 100%;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+.banner h1{
+  text-align: center;
+  color: #fff;
+}
+
+/*-------------------------------
+        Gallary Design
+ ----------------------------------*/
+ .gallary{
+  width: 80% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gallary img{
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 15px;
 }
