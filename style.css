@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 h1{
   font-size: 50px;
@@ -18,11 +19,12 @@ h1{
   padding: 10px;
   color: azure;
  }
+
  .header-btn{
   justify-content: space-evenly;
   padding: 10px;
  }
- .button {
+ .button-1 {
   background-color: white;
   color: black;
   border: 2px solid #555555;
@@ -37,7 +39,7 @@ h1{
   transition-duration: 0.4s;
   cursor: pointer;
 }
-.button:hover {
+.button-1:hover {
   background-color: #555555;
   color: white;
 }
@@ -45,19 +47,23 @@ h1{
  /*-------------------------------
         Banner Design
  ----------------------------------*/
-.orange-color{
-  background-color:orangered ;
+.button-2{
+  background-color:#669999 ;
   color: #fff;
   padding: 10px 20px;
   margin-top: 20px;
   font-size: 20px;
   border-radius: 10px;
 }
+.button-2:hover{
+  border: 2px solid #0B0D17;
+  background-color: #336699;
+}
 .banner{
   width: 90%;
   height: 600px;
   background-image: url('image/donation7.jpg');
-  background-size: 100% 100%;
+  background-size: 100%;
   margin: 50px auto;
   border-radius: 5px;
   text-align: center;
@@ -73,18 +79,42 @@ h1{
 }
 
 /*-------------------------------
+        Donate Design
+ ----------------------------------*/
+ .donate{
+  text-align: center;
+  width: 82%;
+  margin: auto;
+  background-color: #d0d0e1;
+  border-radius: 10px;
+  padding: 20px;
+ }
+ .donate p{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px;
+ }
+ .input{
+  text-align: center;
+  border-radius: 5px;
+  border-style: none;
+  border-bottom: 2px solid grey;
+  width: 600px;
+ }
+/*-------------------------------
         Collection Design
  ----------------------------------*/
  .collection{
-  margin: 60px 0;
+  margin: 50px auto;
 }
  .collector{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   font-family: 'Roboto', sans-serif;
   padding: 15px;
-  margin: 10px 5%;
+  margin: 10px;
 }
 .title{
   font-size: 35px;
@@ -95,19 +125,20 @@ h1{
   margin: 10px auto;
 }
 .collection-box{
-display: grid;
-padding: 20px;
-margin: 10px;
-background-color: honeydew;
-border-radius: 15px;
-box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
+  width: 25%;
+  padding: 20px;
+  margin: 10px;
+  background-color: honeydew;
+  border-radius: 15px;
+  box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
 }
-
 .collection-box img{
-  width: 325px;
+  width: 100%;
   height: 250px;
   border-radius: 10px;
-  /* margin: 10px auto; */
+}
+.collection-box img:hover {
+  border: 2px solid #140033;
 }
 .collection-box h2{
   text-align: center;
@@ -117,11 +148,14 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
   justify-content: center;
 } */
 
-.button-2{
+.button-3{
   font-size: 1.3em;
   text-align: right;
-  color:	orangered;
+  color:	#0066ff;
   margin: 0 30px;
+}
+.button-3:hover{
+  font-size: 1.5em;
 }
 /*-------------------------------
         Gallary Design
@@ -133,9 +167,10 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
   text-align: center;
 }
  .gallary-pic{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  width: 80% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .gallary img{
@@ -144,7 +179,35 @@ box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
   border-radius: 10px;
   margin: 15px;
 }
+.gallary img:hover {
+  padding: 1px;
+  border: 2px solid #140033;
+  border-radius: 10px;
+}
 
+/*-------------------------------
+        Mail Design
+ ----------------------------------*/
+.email{
+  text-align: center;
+  width: 82%;
+  margin: auto;
+  background-color: #d0d0e1;
+  border-radius: 10px;
+  padding: 50px;
+  margin-bottom: 40px;
+}
+.email p{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px;
+}
+#mail{
+  padding: 5px;
+}
+.send{
+  padding: 5px 10px;
+}
 /*-------------------------------
         Footer Design
  ----------------------------------*/
